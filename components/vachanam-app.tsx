@@ -197,6 +197,7 @@ const handleVoice = useCallback(() => {
                 onPrev={goPrev}
                 onNext={goNext}
                 onRandom={goRandom}
+                onVoice={handleVoice}
                 onCopy={handleCopy}
                 onShare={handleShare}
                 onToggleFavorite={() => toggle(current.id)}
