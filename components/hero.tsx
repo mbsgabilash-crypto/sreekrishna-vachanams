@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="/images/krishna-hero.png"
+          src="/krishna-hero.png"
           alt=""
           fill
           priority
