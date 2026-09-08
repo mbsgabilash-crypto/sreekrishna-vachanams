@@ -152,8 +152,8 @@ export function VachanamApp() {
 
   return (
     <>
-      <audio ref={musicRef} src="/audio/krishna-flute.mp3" loop preload="none" />
-      <audio ref={slideSoundRef} src="/audio/slide-change.mp3" preload="auto" />
+      <audio ref={musicRef} src="/krishna-flute.mp3" loop preload="none" />
+      <audio ref={slideSoundRef} preload="auto" />
       <TopBar
         onSearch={() => setSearchOpen(true)}
         musicOn={musicOn}
