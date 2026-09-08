@@ -16,7 +16,7 @@ export function BrandEmblem({
       )}
     >
       <Image
-        src="/images/peacock-feather.png"
+        src="/peacock-feather.png"
         alt="മയിൽപ്പീലി ചിഹ്നം"
         fill
         sizes={sizes}
