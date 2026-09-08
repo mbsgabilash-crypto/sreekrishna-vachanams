@@ -16,6 +16,7 @@ import { vachanams, type Vachanam } from '@/lib/vachanams'
 const SHARE_SIGNATURE = '— ശ്രീകൃഷ്ണ പ്രചോദിത വചനങ്ങൾ'
 
 export function VachanamApp() {
+  const { toggle, isFavorite } = useFavorites()
 const musicRef = useRef<HTMLAudioElement | null>(null)
   const slideSoundRef = useRef<HTMLAudioElement | null>(null)
 
