@@ -15,16 +15,15 @@ import { vachanams, type Vachanam } from '@/lib/vachanams'
 
 const SHARE_SIGNATURE = '— ശ്രീകൃഷ്ണ പ്രചോദിത വചനങ്ങൾ'
 
-export function VachanamApp() {
-  const { toggle, isFavorite } = useFavorites()
+const musicRef = useRef<HTMLAudioElement | null>(null)
+  const slideSoundRef = useRef<HTMLAudioElement | null>(null)
+
   const [filter, setFilter] = useState<Filter>('all')
   const [index, setIndex] = useState(0)
   const [searchOpen, setSearchOpen] = useState(false)
   const [copied, setCopied] = useState(false)
   const [notice, setNotice] = useState('')
   const [musicOn, setMusicOn] = useState(false)
-  const musicRef = useRef<HTMLAudioElement | null>(null)
-  const slideSoundRef = useRef<HTMLAudioElement | null>(null)
   const automaticChangeRef = useRef(false)
   const noticeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
@@ -43,6 +42,18 @@ export function VachanamApp() {
   }, [list.length])
 
   const current = list[index]
+const handleVoice = useCallback(() => {
+  if (!current) return
+
+  window.speechSynthesis.cancel()
+
+  const utterance = new SpeechSynthesisUtterance(current.text)
+  utterance.lang = 'ml-IN'
+  utterance.rate = 0.85
+  utterance.pitch = 1
+
+  window.speechSynthesis.speak(utterance)
+}, [current])
 
   const flash = useCallback((message: string) => {
     setNotice(message)
