@@ -1,0 +1,59 @@
+{
+  "background_color": "#ffffff",
+  "description": "2400 ശ്രീകൃഷ്ണ പ്രചോദിത വചനങ്ങൾ — കർമ്മം, ധർമ്മം, ഭക്തി, സ്നേഹം, ശാന്തി, ജ്ഞാനം എന്നിവയെക്കുറിച്ചുള്ള മലയാളം ചിന്തകൾ. Original Krishna-inspired Malayalam sayings on karma, dharma, devotion, love, peace and wisdom.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "ശ്രീകൃഷ്ണ വചനങ്ങൾ",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "ശ്രീകൃഷ്ണ വചനങ്ങൾ",
+  "start_url": "/",
+  "theme_color": "#f7f4ec",
+  "icons": [
+    {
+      "src": "https://sreekrishna-vachanams.vercel.app/icon-light-32x32.png",
+      "isSquare": false,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://sreekrishna-vachanams.vercel.app/icon-dark-32x32.png",
+      "isSquare": false,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://sreekrishna-vachanams.vercel.app/icon.svg",
+      "type": "image/svg+xml",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://sreekrishna-vachanams.vercel.app/apple-icon.png",
+      "isSquare": false,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ]
+}
