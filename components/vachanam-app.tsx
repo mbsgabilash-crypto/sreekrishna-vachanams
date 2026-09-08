@@ -51,8 +51,8 @@ const handleVoice = useCallback(() => {
 
   const utterance = new SpeechSynthesisUtterance(current.text)
   utterance.lang = 'ml-IN'
-  utterance.rate = 0.85
-  utterance.pitch = 1
+  utterance.rate = 0.75
+utterance.pitch = 0.85
 
   window.speechSynthesis.speak(utterance)
 }, [current])
