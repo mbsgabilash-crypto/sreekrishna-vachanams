@@ -2,7 +2,8 @@
 
 import {
   Check,
-  ChevronLeft,
+ChevronLeft,
+Volume2,
   ChevronRight,
   Copy,
   Heart,
@@ -18,7 +19,8 @@ export function Controls({
   onRandom,
   onCopy,
   onShare,
-  onToggleFavorite,
+onVoice,
+onToggleFavorite,
   isFavorite,
   copied,
   canNavigate,
@@ -28,7 +30,8 @@ export function Controls({
   onRandom: () => void
   onCopy: () => void
   onShare: () => void
-  onToggleFavorite: () => void
+onVoice: () => void
+onToggleFavorite: () => void
   isFavorite: boolean
   copied: boolean
   canNavigate: boolean
@@ -59,7 +62,10 @@ export function Controls({
       </div>
 
       {/* Secondary actions */}
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-5 gap-2">
+        <ActionButton onClick={onVoice} label="വായിക്കുക">
+  <Volume2 className="size-5" />
+</ActionButton>
         <ActionButton onClick={onRandom} label="ക്രമരഹിതം">
           <Shuffle className="size-5" />
         </ActionButton>
